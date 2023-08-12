@@ -1,0 +1,20 @@
+{
+    "username": "Recharge Checker",
+    "embeds": [
+        {
+            "title": "Server Online",
+            "description": "EOS Version: **{}**",
+            "color": 65280, 
+            "author": {
+                "name": "Connection Established",
+                "icon_url": "https://cdn.discordapp.com/attachments/1124289353917669438/1125316008442335314/online-2t.gif"
+            },
+            "footer": {
+                "text": "Provided by Vexx"
+            },
+            "thumbnail": {
+                "url": "https://cdn.discordapp.com/attachments/1124289353917669438/1125310453803921408/71c5aeadf70ec44a0b2fa5413e2b37a4.png"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "username": "Recharge Checker",
+    "embeds": [
+        {
+            "title": "Server Offline",
+            "description": "Uptime Before Crash: **{}**",
+            "color": 16711680, 
+            "author": {
+                "name": "Connection Lost",
+                "icon_url": "https://cdn.discordapp.com/attachments/1124289353917669438/1125309511561908234/offline.gif"
+            },
+            "footer": {
+                "text": "Provided by Vexx"
+            },
+            "thumbnail": {
+                "url": "https://cdn.discordapp.com/attachments/1124289353917669438/1125310453803921408/71c5aeadf70ec44a0b2fa5413e2b37a4.png"
+            }
+        }
+
+    ]
+}
