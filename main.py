@@ -22,17 +22,6 @@ def server_alert():
 
 # Send data to discord server
 def send_data_to_server(webhook, webhook_data):
-
-  # Setup alert settings
-  ping_data = {
-    "username": "Recharge Checker",
-    "content": "@here" #To use a custom role, you must use a role ID like so: <@&1124903637517352960>
-  }
-
-  # Send role ping
-  requests.post(webhook, json=ping_data)
-
-  # Send alert embed
   requests.post(webhook, json=webhook_data)
 
 
