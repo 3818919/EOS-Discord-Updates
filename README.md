@@ -3,7 +3,7 @@ Provides discord status alerts for the Endless Online Server
 
 Bot will first check status of server displayed on the endless-online.com website. If the server is displayed as online it will ping the server to make sure. If either of these steps returns false & the bot's last recorded status was online, the bot will send out the offline discord embed (json) to the webhook.
 
-If either of these are true & the bot's last recorded status was offline, the bot will send out the online discord embed (json) to the webhook.
+If both of these are true & the bot's last recorded status was offline, the bot will send out the online discord embed (json) to the webhook.
 
 If the last recorded status of the server is the same as the latest status, nothing will happen. This is to not spam the server with online or offline alerts.
 
