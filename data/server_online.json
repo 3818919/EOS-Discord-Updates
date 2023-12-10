@@ -1,5 +1,6 @@
 {
     "username": "Recharge Checker",
+    "content": "@here",
     "embeds": [
         {
             "title": "Server Online",
