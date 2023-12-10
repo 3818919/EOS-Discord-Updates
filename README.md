@@ -14,3 +14,6 @@ To use a custom role, follow the following steps:
   2. replace the `@here` with `<@&ROLEID>`
 
 An example of this is if the role ID is `123456789` you would replace the `@here` with `<@&123456789>`
+
+## Scraping the endless online website
+If you're interested in scraping game data from the endless-online.com website, check the `Endless Online > website.py` file as it contains several functions setup to do so. 
