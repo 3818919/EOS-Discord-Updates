@@ -1,19 +1,32 @@
-# EOS Discord Updates
-Provides discord status alerts for the Endless Online Server
+# EOS Discord Update Bot
 
-Bot will first check status of server displayed on the endless-online.com website. If the server is displayed as online it will ping the server to make sure. If either of these steps returns false & the bot's last recorded status was online, the bot will send out the offline discord embed (json) to the webhook.
+This bot provides Discord status alerts for the Endless Online Server, ensuring real-time updates on server availability.
 
-If both of these are true & the bot's last recorded status was offline, the bot will send out the online discord embed (json) to the webhook.
+## Bot Functionality
 
-If the last recorded status of the server is the same as the latest status, nothing will happen. This is to not spam the server with online or offline alerts.
+The bot performs the following checks to determine the server status:
 
-## Changing the role ping
-Changing the role ping can be done in the `server_online.json` & `server_offline.json` files (specifically the `content` data which is currently displayed as @here). 
-To use a custom role, follow the following steps:
-  1. Copy the role ID of the role in discord
-  2. replace the `@here` with `<@&ROLEID>`
+1. **Initial Check**: Verifies the server status on the endless-online.com website.
+2. **Secondary Verification**: Pings the server directly for confirmation.
+3. **Status Alert**:
+   - If the server is offline and the last recorded status was online, the bot sends an offline alert.
+   - If the server is online and the last recorded status was offline, the bot sends an online alert.
+   - If there is no change in the server status, no alert is sent to avoid spamming.
 
-An example of this is if the role ID is `123456789` you would replace the `@here` with `<@&123456789>`
+## Customizing Role Pings
 
-## Scraping the endless online website
-If you're interested in scraping game data from the endless-online.com website, check the `Endless Online > website.py` file as it contains several functions setup to do so. 
+To change the role ping in the alerts, modify the `server_online.json` and `server_offline.json` files:
+
+1. Replace the default `@here` in the `content` field with the custom role ID in the format `<@&ROLEID>`.
+   - For example, if the role ID is `123456789`, replace `@here` with `<@&123456789>`.
+
+## Scraping Data from Endless Online
+
+For users interested in scraping game data from the Endless Online website:
+
+- Refer to the `Endless Online > website.py` file. It contains pre-configured functions for effective data scraping.
+
+**Note**: Ensure that your scraping activities comply with the terms and conditions of the Endless Online website.
+
+## Private Server Status Alerts
+For private server projects, check the [Private Server Status Bot](https://github.com/3818919/Server_Status) which comes with an easy config file.
